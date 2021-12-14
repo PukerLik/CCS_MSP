@@ -52,7 +52,7 @@ int main(void)
 
 {
     //clock setup
-    WDTCTL = WDTPW + WDTHOLD; //Disable the Watchdog timer for our convenience.
+    WDTCTL = WDTPW + WDTHOLD;          //Disable the Watchdog timer for our convenience.
     BCSCTL1 = CALBC1_16MHZ;            // Set DCO to 8 MHz
     DCOCTL = CALDCO_16MHZ;
     //BCSCTL2 = DIVS_3;                   //deliÄ�ka na SMCLK 1:8 - pre Timer
