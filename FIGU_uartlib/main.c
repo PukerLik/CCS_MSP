@@ -9,7 +9,7 @@
  *
  * odpovedá FIGU + to čo dostal
  *
- * ako dostal iné, odpovedá ERRf, ERRm, ERRg, ERRe
+ * ak dostal iné, odpovedá ERRf, ERRm, ERRg, ERRe
  *
  *
  */
@@ -55,7 +55,7 @@ int main(void)
     WDTCTL = WDTPW + WDTHOLD;          //Disable the Watchdog timer for our convenience.
     BCSCTL1 = CALBC1_16MHZ;            // Set DCO to 8 MHz
     DCOCTL = CALDCO_16MHZ;
-    //BCSCTL2 = DIVS_3;                   //deliÄ�ka na SMCLK 1:8 - pre Timer
+    //BCSCTL2 = DIVS_3;                   //delicka na SMCLK 1:8 - pre Timer
     //UART setup
     P1SEL = RXD + TXD ;                // Select TX and RX functionality for P1.1 & P1.2
     P1SEL2 = RXD + TXD ;              //
